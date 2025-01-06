@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Marlon Geoffrey, Développeur Web passionné par les solutions technologiques et la communication.">
+    <meta name="keywords" content="Marlon Geoffrey, développeur web, communication, portfolio, projets, technologies, génie logiciel">
+    <title>Portfolio - Marlon Geoffrey</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/Logo_Marlon_Design.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-shadow">
+        <div class="container">
+            <!-- Logo dans la navbar -->
+            <a class="navbar-brand" href="#">
+                <img src="img/Logo_Marlon_Design.png" alt="Logo de Marlon Geoffrey" width="40" height="40">
+                Mon Portfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">À Propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Expériences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="text-white text-center py-5" style="background-color: #0002d6;">
+        <div class="container">
+            <div class="row">
+                <div class="overlay col-md-5">
+                    <!-- Photo de profil avec bordure -->
+                    <div class="photo-container">
+                        <img src="img/photo_Marlon.jpg" alt="Photo de Marlon Geoffrey" class="profile-img">
+                    </div><br>
+                    <a href="assets/CV_Marlon.pdf" class="btn btn-light btn-lg" download>Télécharger mon CV</a>
+                </div>
+                <div class="overlay col-md-7">
+                    <h1 class="text-name">KOUDJAGBO BORGES <br>Marlon Geoffrey</h1>
+                    <p class="lead">Développeur Web | Designer Graphic 
+                        <br>| Passionné par les solutions technologiques et la communication |
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animation Lottie -->
+        <div class="img-holder">
+            <lottie-player 
+                src="https://assets2.lottiefiles.com/packages/lf20_0yfsb3a1.json" 
+                background="transparent" 
+                speed="1" 
+                loop autoplay
+                style="width: 100%; height: auto;">
+            </lottie-player>
+        </div>        
+    </header>
+
+    <!-- Sections -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center">À Propos</h2>
+            <p>Je suis **Marlon Geoffrey KOUDJAGBO BORGES**, un développeur web passionné, diplômé d'une licence en informatique, spécialité génie logiciel, de l'ESIG Global Success. En plus de ma spécialisation en développement web, je suis également passionné par le domaine de la communication. Actuellement, je travaille au sein de **FLEM Agence**, une agence de communication, où je gère la publication des vidéos YouTube des clients et crée des Shorts YouTube à l'aide de CapCut. Mon rôle m'amène aussi à manipuler des caméras pour le tournage d'émissions et à capturer des photos de qualité. Toujours curieux et en quête de nouvelles compétences, je m'efforce de combiner mes deux passions : le développement web et la communication, pour offrir des solutions créatives et innovantes.</p>
+        </div>
+    </section>
+
+    <section id="experience" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Expériences</h2>
+            <ul>
+                <li>Création d'une application web « Esigram » pour les étudiants d’ESIG Global Success.</li>
+                <li>Développement d’une base de données pour un site web de gestion.</li>
+                <li>Stage à GoChap Solutions : Novembre 2023 à aujourd’hui.</li>
+                <li>Gestion des vidéos YouTube et création de Shorts YouTube chez FLEM Agence.</li>
+                <li>Tournage d'émissions et prise de photos professionnelles pour divers projets.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Projets</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/project1.png" class="card-img-top" alt="Capture d'écran du projet Esigram, réseau social étudiant">
+                        <div class="card-body">
+                            <h5 class="card-title">Esigram</h5>
+                            <p class="card-text">Un réseau social pour les étudiants.</p>
+                            <a href="https://github.com/tonprojet" class="btn btn-primary">Voir sur GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ajouter d'autres projets -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Contact</h2>
+            <p class="text-center">Email : borgesmarlon0609@gmail.com</p>
+            <p class="text-center">Téléphone : (00228) 99 86 37 35</p>
+            <!-- Formulaire de contact -->
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Marlon Geoffrey. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- Lottie Player Script -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+</html>
