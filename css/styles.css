@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding-top: 50px; /* Ajuster selon la hauteur de la navbar */
+}
+
+.navbar-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Ombre légère */
+    transition: box-shadow 0.3s ease; /* Transition pour une ombre fluide */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #fb2e01;
+}
+
+header {
+    background-color: #0002d6;
+    color: #fff;
+}
+
+/* Conteneur et image du profil */
+.photo-container {
+    display: inline-block;
+    position: relative;
+    text-align: center; /* Centrer le contenu */
+    margin-bottom: 1.5rem;
+}
+
+/* Image du profil */
+.profile-img {
+    width: 200px; /* Taille de l'image */
+    height: 200px; /* Taille de l'image */
+    object-fit: cover; /* L'image couvre la zone sans déformation */
+    border: 6px solid #fb2e01; /* Bordure assortie */
+    border-radius: 25px; /* Bordure arrondie */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère */
+}
+
+/* Nom de la personne */
+.text-name {
+    font-weight: bold; /* Gras */
+    text-align: left; /* Alignement gauche */
+    font-size: 2.5rem; /* Taille du texte */
+    color: #fff; /* Couleur blanche pour le texte */
+    margin-top: 15px;
+}
+
+.lead {
+    text-align: left; /* Alignement gauche */
+    font-size: 1.2rem; /* Taille du texte */
+    color: #fff; /* Couleur blanche pour le texte */
+    margin-top: 15px;
+}
+
+/* Bouton de téléchargement du CV */
+.btn-light {
+    background-color: #fb2e01; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    cursor: pointer; /* Curseur de souris */
+    padding: 10px 20px; /* Espacement interne */
+    border-radius: 5px; /* Bordure arrondie */
+    font-weight: bold; /* Gras */
+    margin-top: 15px;
+}
+
+/* Style pour la section des projets */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Responsivité pour mobile */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    /* Adaptation de la taille de l'image pour les petits écrans */
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .text-name {
+        font-size: 2rem; /* Réduction de la taille du nom sur mobile */
+    }
+}
+
+/* Formulaire de contact */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #0002d6;
+}
+
+/* Style général des sections */
+section {
+    border: 1px solid #000000; /* Bordure bleue */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5); /* Ombre sous la section */
+    padding: 20px; /* Espacement interne */
+    margin-bottom: 30px; /* Espacement entre les sections */
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #fff; /* Fond blanc pour bien délimiter */
+}
+
+/* Centrer le contenu des sections */
+section .container {
+    text-align: center;
+}
+
+/* Ajustement des titres des sections */
+section h2 {
+    font-size: 2rem; /* Taille du titre */
+    font-weight: bold; /* Gras */
+    color: #fb2e01; /* Couleur principale */
+    margin-bottom: 20px;
+}
+
+/* Ombres douces et bordures */
+section ul,
+section p,
+section form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Formulaires et listes alignés */
+form,
+ul {
+    text-align: left; /* Alignement à gauche des éléments de liste ou du formulaire */
+    max-width: 700px;
+    margin: 0 auto;
+}
